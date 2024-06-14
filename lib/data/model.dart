@@ -1,21 +1,5 @@
 import 'package:chess/utils/constants/strings.dart';
 
-final map = {
-  "to": 0,
-  "from": 0,
-  "emptySquares": [1, 2],
-  "movedPieces": [
-    {
-      "index": 3,
-      "name": "R",
-    },
-    {
-      "index": 4,
-      "name": "K",
-    },
-  ],
-};
-
 class MoveModel {
   final int to;
   final int from;
@@ -77,3 +61,19 @@ int revers(int position) {
   final newPosition = row * 8 + column;
   return newPosition;
 }
+
+final map = {
+  "to": 0,
+  "from": 0,
+  "emptySquares": [1, 2],
+  "movedPieces": [
+    {
+      "index": 3,
+      "name": "R",
+    },
+    {
+      "index": 4,
+      "name": "K",
+    },
+  ],
+};
